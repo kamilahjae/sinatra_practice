@@ -6,7 +6,7 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
-  get "./about-me" do
+  get "/about-me" do
     "I'm Kamilah"
   end
 end
