@@ -15,7 +15,7 @@ class Post
   end
   def self.all
     Dir.glob("views/posts/*").collect do |filepath|
-      a = filepath.split
+      a = filepath.split("/")
       new(a)
     end
   end
