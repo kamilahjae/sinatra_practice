@@ -7,6 +7,12 @@ class MyApp < Sinatra::Base
   end
 
   get "/about-me" do
-    "I'm Kamilah"
+    erb :about_me
+  end
+
+  # dynamic route
+  get "/posts/:post_name" do
+    post = params[:post_name]
+    erb "/posts/#{post}".to_sym
   end
 end
