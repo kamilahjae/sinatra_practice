@@ -8,3 +8,25 @@
 <% @posts.each do |post| %>
   <a href="<%= post.url %>"><%= post.title %></a>
 <% end %>
+
+<hr>
+<%= params.inspect %> debug line. params takes everything from body of the form, parses it to a hash, and assigns it to params.
+so params is {"first_name" => "firstname", "last_name" => "lastname"}. This input can now be stored in a database
+<hr>
+
+<form action="/" method='POST'>
+  First Name:
+  <input type="text" name="first_name" /><br>
+
+  Last Name:
+  <input type="text" name="last_name" /><br>
+
+  <input type="submit">
+</form>
+
+
+<!-- input is like the key name, and input is the value -->
+<!-- submit is like a link that will send everything inputed in form to HTTP link as the body
+      the url changes. Nope, not actually sending a query. to prevent changing the url, send info to body of request instead
+      of the HTTP line-->
+<!-- action attribute tells url where to send the form to. sends to my_app file-->
