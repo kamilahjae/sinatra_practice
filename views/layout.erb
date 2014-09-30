@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="/style.css" rel="stylesheet">
-  <script src="/app.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
-<head>
+  <link href="/css/layout.css" rel="stylesheet">
 
+  <title>Kamilah Jenkins</title>
+</head>
+  <body>
+    <div class='header'>
 
+      <div class="nav">
+        <u1 class="horizontal-list">
+          <li><a href="/about-me">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div> <!-- end of .nav -->
 
+    </div> <!-- end of .header -->
 
-<!-- <img src="/cat.jpg" alt="A Cute Cat" -->
+    <div class="container">
+      <%= yield %>
+    </div> <!-- end of .container -->
+  </body>
 
-<hr>
-
-<a href = "/">Home</a>
-<a href = "/about-me">About Me </a>
-<%= yield %>
-
-<hr>
-Thank you for visiting!
-<html>
+</html>

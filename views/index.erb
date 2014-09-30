@@ -1,18 +1,14 @@
-<h1>Welcome!</h1>
 
-<hr>
+  <div id="name_logo">
+    <img src="/name_faces.png" alt="Kamilah Jenkins.">
+  </div>
 
-<%= Time.now.strftime("%m.%d.%Y") %>
-<!-- This is where a comment will go -->
 
-<% @posts.each do |post| %>
-  <a href="<%= post.url %>"><%= post.title %></a>
-<% end %>
-
-<hr>
-<%= params.inspect %> debug line. params takes everything from body of the form, parses it to a hash, and assigns it to params.
-so params is {"first_name" => "firstname", "last_name" => "lastname"}. This input can now be stored in a database
-<hr>
+<!-- <hr>
+<%= params.inspect %> -->
+<!-- debug line. params takes everything from body of the form, parses it to a hash, and assigns it to params.
+so params is {"first_name" => "firstname", "last_name" => "lastname"}. This input can now be stored in a database -->
+<!-- <hr>
 
 <form action="/" method='POST'>
   First Name:
@@ -22,7 +18,7 @@ so params is {"first_name" => "firstname", "last_name" => "lastname"}. This inpu
   <input type="text" name="last_name" /><br>
 
   <input type="submit">
-</form>
+</form> -->
 
 
 <!-- input is like the key name, and input is the value -->

@@ -1,0 +1,49 @@
+/* HTML Tags... */
+body {
+  margin: 0;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.container #name_logo {
+  margin: 300px auto auto;
+}
+/* ...HTML Tags*/
+
+/* Layout... */
+.horizontal-list {
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list li {
+  font-size: 14pt;
+  height: 30px;
+  margin: 0 5px;
+  padding-top: 10px;
+  display: inline-block;
+  list-style: none;
+
+}
+
+.horizontal-list li:hover {
+  background-color: #2e9d99;
+}
+/* ...Layout */
+
+/* Header... */
+.header {
+
+  padding-left: 40px;
+  height: 40px;
+}
+
+.nav {
+  display: inline-block;
+  float: right;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+/* ...Header */

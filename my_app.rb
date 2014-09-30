@@ -1,5 +1,8 @@
 require 'sinatra'
 require './lib/post' # allows us to use the post methods
+require '/blog'
+require '/portfolio'
+require '/contact'
 
 class MyApp < Sinatra::Base
 
@@ -20,6 +23,18 @@ class MyApp < Sinatra::Base
 
   get "/about-me" do
     erb :about_me
+  end
+
+  get "/blog" do
+    erb :blog
+  end
+
+  get "/portfolio" do
+    erb :portfolio
+  end
+
+  get "/contact" do
+    erb :contact
   end
 
   # dynamic route
